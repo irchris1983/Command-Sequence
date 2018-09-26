@@ -1,0 +1,28 @@
+﻿<Window x:Class="GAS.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GAS"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="583.179" Width="890.699" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Button x:Name="exit" Content="Exit" HorizontalAlignment="Left" Height="32" Margin="785,513,0,0" VerticalAlignment="Top" Width="89" Click="exit_Click"/>
+        <Button x:Name="daq" Content="Daq" HorizontalAlignment="Left" Height="32" Margin="10,513,0,0" VerticalAlignment="Top" Width="89" Click="daq_Click"/>
+        <Button x:Name="open" Content="Open" HorizontalAlignment="Left" Height="26" Margin="785,10,0,0" VerticalAlignment="Top" Width="76" RenderTransformOrigin="0.971,0.558" Click="open_Click"/>
+        <Button x:Name="save" Content="Save" HorizontalAlignment="Left" Height="26" Margin="785,41,0,0" VerticalAlignment="Top" Width="76" Click="save_Click"/>
+          
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="10,431,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="770"/>
+        <Button x:Name="add" Content="Add" HorizontalAlignment="Left" Margin="785,340,0,0" VerticalAlignment="Top" Width="76" Click="add_Click"/>
+        <Button x:Name="remove" Content="Remove" HorizontalAlignment="Left" Margin="785,367,0,0" VerticalAlignment="Top" Width="76" Click="remove_Click"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="378" Margin="10,10,0,0" VerticalAlignment="Top" Width="770" >
+            <DataGrid.ContextMenu >
+                <ContextMenu>
+                    <MenuItem Header="Add"/>
+                    <MenuItem Header="Remove"/>
+                </ContextMenu>
+            </DataGrid.ContextMenu>
+        </DataGrid>
+        <CheckBox x:Name="checkBox" Content="CheckBox" HorizontalAlignment="Left" Margin="551,487,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
